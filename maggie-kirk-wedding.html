@@ -23,14 +23,10 @@
     --olive-dark:#2E3B2F;
     --olive:#299059;
     --olive-mid:#356E57;
-    --terracotta:#D98E48;
-    --terracotta-deep:#D8B85E;
+    --creamy-yellow:#FFF7CE;
     --stone:#F7F3EA;
-    --stone-mid:#A9AD6E;
     --orange:#FFE88B;
-    --cream:#EFE7D3;
     --ink:#2E3B2F;
-    --ink-soft:#4F5744;
     --serif:'Fraunces', serif;
     --script:'Cantina Riviera Script', 'Fraunces', serif;
     --caps:'Cantina Riviera Caps', 'Inter', sans-serif;
@@ -108,7 +104,7 @@
     letter-spacing:0.04em;
     text-transform:uppercase;
     font-weight:500;
-    color:var(--ink-soft);
+    color:var(--olive-mid);
   }
   nav .rsvp-pill{
     background:var(--orange);
@@ -141,7 +137,7 @@
     position:fixed;top:0;right:-100%;
     width:82vw;max-width:320px;
     height:100dvh;
-    background:var(--cream);
+    background:var(--creamy-yellow);
     display:flex;flex-direction:column;
     padding:calc(var(--nav-h) + 36px) 30px 40px;
     gap:0;
@@ -219,7 +215,7 @@
     display:block;
     font-size:clamp(24px,7vw,56px);
     font-style:italic;
-    color:var(--stone-mid);
+    color:var(--olive-mid);
     margin:2px 0;
     font-weight:300;
     opacity:0;
@@ -228,7 +224,7 @@
   .hero .sub{
     margin-top:24px;
     font-size:15px;
-    color:var(--ink-soft);
+    color:var(--olive-mid);
     letter-spacing:0.02em;
     line-height:1.6;
     max-width:320px;
@@ -252,7 +248,7 @@
     position:absolute;
     bottom:24px;left:50%;transform:translateX(-50%);
     width:1px;height:40px;
-    background:linear-gradient(var(--ink-soft), transparent);
+    background:linear-gradient(var(--olive-mid), transparent);
     opacity:0;
     z-index:2;
     animation:heroCueFade 1s ease 1.15s forwards;
@@ -291,7 +287,7 @@
   /* ---------- Countdown ---------- */
   .countdown-teaser{
     padding:56px 0 64px;
-    background:var(--cream);
+    background:var(--creamy-yellow);
     text-align:center;
     position:relative;
     overflow:hidden;
@@ -313,7 +309,7 @@
   .countdown-num{
     font-weight:500;
     font-style:normal;
-    color:var(--terracotta);
+    color:var(--orange);
     font-size:1.3em;
   }
   .countdown-line em{font-style:normal;color:var(--olive-dark);}
@@ -322,13 +318,13 @@
     font-family:var(--caps);
     font-style:normal;
     font-size:14px;
-    color:var(--ink-soft);
+    color:var(--olive-mid);
   }
 
   /* ---------- Story ---------- */
   .story{
     background:var(--olive-dark);
-    color:var(--cream);
+    color:var(--stone);
     padding:80px 0;
   }
   .story .wrap{
@@ -344,7 +340,7 @@
     font-size:clamp(26px,7vw,46px);
     line-height:1.2;
     margin-top:16px;
-    color:var(--cream);
+    color:var(--stone);
   }
   .story p{
     font-size:16px;
@@ -365,7 +361,7 @@
   .story-photo{
     aspect-ratio:4/3;
     border-radius:6px;
-    background:linear-gradient(155deg, var(--terracotta) 0%, var(--olive) 50%, var(--olive-mid) 75%, var(--olive-dark) 100%);
+    background:linear-gradient(155deg, var(--orange) 0%, var(--olive) 50%, var(--olive-mid) 75%, var(--olive-dark) 100%);
     position:relative;
     display:flex;align-items:center;justify-content:center;
     order:-1;
@@ -407,7 +403,7 @@
   }
   .schedule-intro .sub{
     max-width:340px;margin:16px auto 0;
-    color:var(--ink-soft);
+    color:var(--olive-mid);
     font-size:15px;
     line-height:1.65;
     font-weight:300;
@@ -462,14 +458,14 @@
     opacity:0.85;
   }
   .day-1{background:var(--olive);color:var(--stone);}
-  .day-2{background:var(--olive-dark);color:var(--cream);}
+  .day-2{background:var(--olive-dark);color:var(--stone);}
   .day-3{background:var(--orange);color:var(--olive-dark);}
-  .day-4{background:var(--stone-mid);color:var(--olive-dark);}
+  .day-4{background:var(--creamy-yellow);color:var(--olive-dark);}
 
   /* ---------- Venue ---------- */
   .venue{
     padding:80px 0;
-    background:var(--cream);
+    background:var(--creamy-yellow);
   }
   .venue .wrap{
     display:flex;
@@ -479,7 +475,7 @@
   .venue-photo{
     aspect-ratio:4/3;
     border-radius:6px;
-    background:linear-gradient(160deg, var(--stone-mid) 0%, var(--stone) 60%, var(--cream) 100%);
+    background:linear-gradient(160deg, var(--olive-mid) 0%, var(--stone) 60%, var(--creamy-yellow) 100%);
     display:flex;align-items:center;justify-content:center;
     position:relative;
     order:-1;
@@ -498,8 +494,8 @@
     font-size:11px;
     letter-spacing:0.06em;
     text-transform:uppercase;
-    color:var(--ink-soft);
-    border:1px dashed var(--stone-mid);
+    color:var(--olive-mid);
+    border:1px dashed var(--olive-mid);
     padding:9px 16px;
     border-radius:100px;
     text-align:center;
@@ -518,7 +514,7 @@
     margin-bottom:16px !important;
   }
   .venue p{
-    font-size:15px;line-height:1.75;color:var(--ink-soft);font-weight:300;
+    font-size:15px;line-height:1.75;color:var(--olive-mid);font-weight:300;
     margin-bottom:12px;
   }
   .venue-detail{
@@ -530,7 +526,7 @@
     font-size:13.5px;
   }
   .venue-detail:last-child{border-bottom:1px solid rgba(40,43,27,0.1);}
-  .venue-detail .label{color:var(--ink-soft);}
+  .venue-detail .label{color:var(--olive-mid);}
   .venue-detail .value{font-weight:500;text-align:right;}
   .venue-details{margin-top:20px;}
 
@@ -538,7 +534,7 @@
   .travel{
     padding:72px 0;
     background:var(--olive-dark);
-    color:var(--cream);
+    color:var(--stone);
   }
   .travel-head{text-align:center;margin-bottom:36px;}
   .travel-head .eyebrow{color:var(--orange);}
@@ -589,21 +585,21 @@
   }
   .registry p{
     max-width:320px;margin:0 auto;
-    color:var(--ink-soft);font-size:14.5px;line-height:1.65;font-weight:300;
+    color:var(--olive-mid);font-size:14.5px;line-height:1.65;font-weight:300;
   }
   .registry-badge{
     display:inline-block;margin-top:24px;
     padding:11px 24px;
-    border:1px solid var(--stone-mid);
+    border:1px solid var(--olive-mid);
     border-radius:100px;
     font-size:11px;letter-spacing:0.06em;text-transform:uppercase;
-    color:var(--ink-soft);
+    color:var(--olive-mid);
   }
 
   /* ---------- FAQ ---------- */
   .faq{
     padding:72px 0;
-    background:var(--cream);
+    background:var(--creamy-yellow);
   }
   .faq-head{text-align:center;margin-bottom:36px;}
   .faq-head h2{
@@ -644,7 +640,7 @@
     margin-top:14px;
     font-size:14.5px;
     line-height:1.7;
-    color:var(--ink-soft);
+    color:var(--olive-mid);
     font-weight:300;
     max-width:600px;
   }
@@ -653,7 +649,7 @@
   .rsvp{
     padding:80px 0 90px;
     background:var(--olive-dark);
-    color:var(--cream);
+    color:var(--stone);
     text-align:center;
     overflow:hidden;
   }
@@ -677,7 +673,7 @@
   }
   .rsvp p{
     font-size:15px;font-weight:300;
-    color:rgba(239,231,211,0.85);
+    color:rgba(247,243,234,0.85);
     max-width:320px;margin:0 auto 32px;
     line-height:1.65;
   }
@@ -725,7 +721,7 @@
   }
   footer .fname{
     font-family:var(--script);font-style:italic;font-size:16px;
-    color:var(--cream);margin-bottom:6px;display:block;
+    color:var(--stone);margin-bottom:6px;display:block;
   }
   .footer-link{margin-top:16px;}
   .footer-link a{
@@ -759,7 +755,7 @@
     .nav-links li a{padding:0;border-bottom:none;font-size:13px;}
     .nav-links li a:hover{color:var(--olive);}
     nav .rsvp-pill{width:auto;padding:9px 20px;}
-    nav .rsvp-pill:hover{background:var(--terracotta-deep);}
+    nav .rsvp-pill:hover{background:var(--creamy-yellow);}
 
     .hero{padding:calc(var(--nav-h) + 60px) 40px 80px;}
     .hero .sub{max-width:none;font-size:16px;}
@@ -930,7 +926,7 @@
 </section>
 
 <section class="day day-4">
-  <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C380,5 1060,95 1440,50 L1440,100 L0,100 Z" fill="var(--stone-mid)"/></svg>
+  <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C380,5 1060,95 1440,50 L1440,100 L0,100 Z" fill="var(--creamy-yellow)"/></svg>
   <div class="wrap">
     <div class="reveal"><span class="day-num" data-parallax="0.1">04</span></div>
     <div class="reveal">
@@ -942,7 +938,7 @@
 </section>
 
 <section class="venue" id="venue">
-  <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C400,95 1080,10 1440,50 L1440,100 L0,100 Z" fill="var(--cream)"/></svg>
+  <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C400,95 1080,10 1440,50 L1440,100 L0,100 Z" fill="var(--creamy-yellow)"/></svg>
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow">Where We'll Be</span>
