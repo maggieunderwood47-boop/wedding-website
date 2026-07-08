@@ -21,7 +21,8 @@
   }
   :root{
     --olive-dark:#2E3B2F;
-    --olive:#6B6E3F;
+    --olive:#299059;
+    --olive-mid:#356E57;
     --terracotta:#D98E48;
     --terracotta-deep:#D8B85E;
     --stone:#F7F3EA;
@@ -364,7 +365,7 @@
   .story-photo{
     aspect-ratio:4/3;
     border-radius:6px;
-    background:linear-gradient(155deg, var(--terracotta) 0%, var(--olive) 55%, var(--olive-dark) 100%);
+    background:linear-gradient(155deg, var(--terracotta) 0%, var(--olive) 50%, var(--olive-mid) 75%, var(--olive-dark) 100%);
     position:relative;
     display:flex;align-items:center;justify-content:center;
     order:-1;
@@ -1139,7 +1140,7 @@
   }
 
   // Confetti burst on RSVP click
-  const confettiColors = ['#D98E48', '#6B6E3F', '#FFE88B', '#EFE7D3', '#9aa5ad'];
+  const confettiColors = ['#D98E48', '#299059', '#FFE88B', '#EFE7D3', '#9aa5ad'];
   function burstConfetti(x, y){
     const count = reduceMotion ? 0 : 16;
     for (let i = 0; i < count; i++) {
