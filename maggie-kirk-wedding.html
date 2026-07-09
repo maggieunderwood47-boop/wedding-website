@@ -402,20 +402,18 @@
     font-weight:300;
   }
 
-  .day{
-    min-height:auto;
-    display:flex;
-    align-items:center;
-    padding:52px 0;
+  .day-outer{
     position:relative;
+    height:calc(100svh + 15vh);
   }
-  .day + .day{margin-top:-28px;}
-  .day.reveal{
-    opacity:0;
-    transform:translateY(48px);
-    transition:opacity 0.9s cubic-bezier(.16,.8,.28,1), transform 0.9s cubic-bezier(.16,.8,.28,1);
+  .day{
+    min-height:calc(100svh - var(--nav-h));
+    display:flex;
+    align-items:flex-start;
+    padding:104px 0 70px;
+    position:sticky;
+    top:var(--nav-h);
   }
-  .day.reveal.in{opacity:1;transform:translateY(0);}
   .day .wrap{
     display:flex;
     flex-direction:column;
@@ -784,8 +782,7 @@
     .schedule-intro{padding:150px 0 70px;}
     .schedule-intro .sub{max-width:520px;font-size:16px;}
 
-    .day{min-height:48vh;padding:50px 0;}
-    .day + .day{margin-top:-48px;}
+    .day{padding:90px 0 60px;}
     .day .wrap{
       display:grid;grid-template-columns:0.5fr 1fr;gap:60px;
       align-items:center;text-align:left;
@@ -898,7 +895,8 @@
   </div>
 </section>
 
-<section class="day day-1 reveal" id="schedule">
+<div class="day-outer">
+<section class="day day-1" id="schedule">
   <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,55 C360,10 1080,95 1440,45 L1440,100 L0,100 Z" fill="var(--olive)"/></svg>
   <div class="wrap">
     <div class="reveal"><span class="day-num" data-parallax="0.1">01</span></div>
@@ -910,8 +908,10 @@
     </div>
   </div>
 </section>
+</div>
 
-<section class="day day-2 reveal">
+<div class="day-outer">
+<section class="day day-2">
   <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,45 C400,90 1040,5 1440,55 L1440,100 L0,100 Z" fill="var(--creamy-yellow)"/></svg>
   <div class="wrap">
     <div class="reveal"><span class="day-num" data-parallax="0.1">02</span></div>
@@ -923,8 +923,10 @@
     </div>
   </div>
 </section>
+</div>
 
-<section class="day day-3 reveal">
+<div class="day-outer">
+<section class="day day-3">
   <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,60 C320,15 1120,90 1440,40 L1440,100 L0,100 Z" fill="var(--orange)"/></svg>
   <div class="wrap">
     <div class="reveal"><span class="day-num" data-parallax="0.1">03</span></div>
@@ -936,8 +938,10 @@
     </div>
   </div>
 </section>
+</div>
 
-<section class="day day-4 reveal">
+<div class="day-outer">
+<section class="day day-4">
   <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C380,5 1060,95 1440,50 L1440,100 L0,100 Z" fill="var(--olive-mid)"/></svg>
   <div class="wrap">
     <div class="reveal"><span class="day-num" data-parallax="0.1">04</span></div>
@@ -949,6 +953,7 @@
     </div>
   </div>
 </section>
+</div>
 
 <section class="venue" id="venue">
   <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C400,95 1080,10 1440,50 L1440,100 L0,100 Z" fill="var(--creamy-yellow)"/></svg>
