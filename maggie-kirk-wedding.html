@@ -359,8 +359,6 @@
     display:flex;align-items:center;justify-content:center;
     order:-1;
     overflow:hidden;
-    transform:rotate(-2.5deg);
-    border:18px solid #fff;
     box-shadow:0 16px 32px rgba(0,0,0,0.28);
     margin-top:-90px;
     z-index:3;
@@ -484,8 +482,6 @@
     position:relative;
     order:-1;
     overflow:hidden;
-    transform:rotate(2deg);
-    border:18px solid #fff;
     box-shadow:0 14px 28px rgba(46,59,47,0.18);
   }
   .venue-photo img{
@@ -637,9 +633,9 @@
     font-weight:300;
     color:var(--olive);
     flex-shrink:0;
-    transition:transform 0.3s ease;
+    transition:transform 0.5s cubic-bezier(.34,1.8,.64,1);
   }
-  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item[open] summary::after{transform:rotate(225deg);}
   .faq-item p{
     margin-top:14px;
     font-size:14.5px;
@@ -829,8 +825,8 @@
     .day-num{transition:transform 0.4s cubic-bezier(.34,1.56,.64,1);}
     .day-num:hover{transform:rotate(-4deg) scale(1.05) !important;}
     nav .logo:hover{transform:rotate(-4deg);}
-    .rsvp-btn{transition:transform 0.3s cubic-bezier(.16,.8,.28,1), box-shadow 0.3s ease;}
-    .rsvp-btn:hover{transform:translateY(-3px) rotate(-1.5deg);box-shadow:0 16px 40px rgba(0,0,0,0.2);}
+    .rsvp-btn{transition:transform 0.5s cubic-bezier(.34,1.8,.64,1), box-shadow 0.3s ease;}
+    .rsvp-btn:hover{transform:translateY(-4px) scale(1.07) rotate(-2.5deg);box-shadow:0 16px 40px rgba(0,0,0,0.2);}
   }
 </style>
 </head>
