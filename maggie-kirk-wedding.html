@@ -207,11 +207,11 @@
   .hero-text{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;}
   .hero-text .eyebrow{
     font-family:var(--script);
-    font-size:28px;
+    font-size:clamp(38px,10vw,64px);
     font-weight:400;
     text-transform:none;
     letter-spacing:normal;
-    margin-bottom:10px;
+    margin-bottom:6px;
     text-shadow:0 0 24px rgba(251,246,232,0.9), 0 0 4px rgba(251,246,232,0.9);
     opacity:0;
     animation:heroFadeUp 0.9s cubic-bezier(.16,.8,.28,1) 0.1s forwards;
@@ -219,6 +219,7 @@
   .hero h1{
     font-family:var(--title);
     font-weight:400;
+    text-transform:uppercase;
     font-size:clamp(46px, 15vw, 140px);
     line-height:0.98;
     letter-spacing:-0.01em;
@@ -349,7 +350,7 @@
   .story h2{
     font-family:var(--title);
     font-weight:400;
-    font-style:italic;
+    text-transform:uppercase;
     font-size:clamp(26px,7vw,46px);
     line-height:1.2;
     margin-top:16px;
@@ -404,9 +405,6 @@
     padding:72px 0 40px;
     text-align:center;
     background:var(--stone);
-    background-image:var(--watercolor);
-    background-repeat:repeat;
-    background-size:480px 271px;
   }
   .schedule-intro h2{
     font-family:var(--script);
@@ -455,6 +453,7 @@
   }
   .day-title{
     font-family:var(--title);
+    text-transform:uppercase;
     font-weight:500;
     font-size:clamp(28px,8vw,54px);
     margin-bottom:10px;
@@ -531,6 +530,7 @@
   .venue-fullname{
     font-family:var(--title);
     font-style:italic;
+    text-transform:uppercase;
     font-size:22px;
     color:var(--olive);
     margin-bottom:16px !important;
@@ -561,7 +561,7 @@
   .travel-head{text-align:center;margin-bottom:36px;}
   .travel-head .eyebrow{color:var(--orange);}
   .travel-head h2{
-    font-family:var(--title);font-weight:500;
+    font-family:var(--title);font-weight:500;text-transform:uppercase;
     font-size:clamp(28px,7.5vw,54px);
     margin-top:12px;
   }
@@ -585,7 +585,7 @@
     font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);margin-bottom:14px;display:block;
   }
   .travel-card h3{
-    font-family:var(--title);font-weight:600;font-size:20px;margin-bottom:10px;
+    font-family:var(--title);font-weight:600;font-size:20px;margin-bottom:10px;text-transform:uppercase;
   }
   .travel-card p{
     font-size:14px;line-height:1.7;font-weight:300;color:rgba(251,246,232,0.72);
@@ -601,7 +601,7 @@
     text-align:center;
   }
   .registry h2{
-    font-family:var(--title);font-weight:500;font-style:italic;
+    font-family:var(--title);font-weight:500;font-style:italic;text-transform:uppercase;
     font-size:clamp(26px,7vw,48px);
     margin:14px 0 14px;
   }
@@ -625,7 +625,7 @@
   }
   .faq-head{text-align:center;margin-bottom:36px;}
   .faq-head h2{
-    font-family:var(--title);font-weight:500;font-style:normal;
+    font-family:var(--title);font-weight:500;font-style:normal;text-transform:uppercase;
     font-size:clamp(28px,8vw,48px);margin-top:12px;
   }
   .faq-list{max-width:680px;margin:0 auto;}
@@ -689,7 +689,7 @@
   .rsvp .reveal{position:relative;z-index:1;}
   .rsvp .eyebrow{color:rgba(255,232,139,0.85);}
   .rsvp h2{
-    font-family:var(--title);font-weight:500;
+    font-family:var(--title);font-weight:500;text-transform:uppercase;
     font-size:clamp(36px,11vw,88px);
     line-height:1.05;
     margin:16px 0 16px;
@@ -880,7 +880,7 @@
     <span class="eyebrow">Save the Weekend</span>
     <h1>Maggie<span class="amp">&amp;</span>Kirk</h1>
     <p class="sub">Three nights in <strong>Umbria</strong>, celebrating with our favorite people</p>
-    <p class="dates">7.22.27 – 7.25.27 · Allerona, Italy</p>
+    <p class="dates">7.22.27 – 7.25.27<br>Allerona, Italy</p>
   </div>
   <div class="scroll-cue"></div>
 </section>
