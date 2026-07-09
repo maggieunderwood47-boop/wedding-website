@@ -402,12 +402,18 @@
     font-weight:300;
   }
 
+  .day-outer{
+    position:relative;
+    height:calc(100svh + 45vh);
+  }
   .day{
-    min-height:auto;
+    height:calc(100svh - var(--nav-h));
     display:flex;
     align-items:center;
-    padding:52px 0;
-    position:relative;
+    padding:70px 0;
+    position:sticky;
+    top:var(--nav-h);
+    overflow:hidden;
   }
   .day .wrap{
     display:flex;
@@ -459,10 +465,10 @@
     opacity:0.85;
   }
   .day-dress em{font-style:normal;opacity:0.75;}
-  .day-1{background:var(--olive);color:var(--stone);}
-  .day-2{background:var(--creamy-yellow);color:var(--olive-dark);}
-  .day-3{background:var(--orange);color:var(--olive-dark);}
-  .day-4{background:var(--olive-mid);color:var(--stone);}
+  .day-1{background:var(--olive);color:var(--stone);z-index:1;}
+  .day-2{background:var(--creamy-yellow);color:var(--olive-dark);z-index:2;}
+  .day-3{background:var(--orange);color:var(--olive-dark);z-index:3;}
+  .day-4{background:var(--olive-mid);color:var(--stone);z-index:4;}
 
   /* ---------- Venue ---------- */
   .venue{
@@ -777,7 +783,7 @@
     .schedule-intro{padding:150px 0 70px;}
     .schedule-intro .sub{max-width:520px;font-size:16px;}
 
-    .day{min-height:48vh;padding:50px 0;}
+    .day{padding:60px 0;}
     .day .wrap{
       display:grid;grid-template-columns:0.5fr 1fr;gap:60px;
       align-items:center;text-align:left;
@@ -890,6 +896,7 @@
   </div>
 </section>
 
+<div class="day-outer">
 <section class="day day-1" id="schedule">
   <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,55 C360,10 1080,95 1440,45 L1440,100 L0,100 Z" fill="var(--olive)"/></svg>
   <div class="wrap">
@@ -902,7 +909,9 @@
     </div>
   </div>
 </section>
+</div>
 
+<div class="day-outer">
 <section class="day day-2">
   <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,45 C400,90 1040,5 1440,55 L1440,100 L0,100 Z" fill="var(--creamy-yellow)"/></svg>
   <div class="wrap">
@@ -915,7 +924,9 @@
     </div>
   </div>
 </section>
+</div>
 
+<div class="day-outer">
 <section class="day day-3">
   <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,60 C320,15 1120,90 1440,40 L1440,100 L0,100 Z" fill="var(--orange)"/></svg>
   <div class="wrap">
@@ -928,7 +939,9 @@
     </div>
   </div>
 </section>
+</div>
 
+<div class="day-outer">
 <section class="day day-4">
   <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C380,5 1060,95 1440,50 L1440,100 L0,100 Z" fill="var(--olive-mid)"/></svg>
   <div class="wrap">
@@ -941,6 +954,7 @@
     </div>
   </div>
 </section>
+</div>
 
 <section class="venue" id="venue">
   <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C400,95 1080,10 1440,50 L1440,100 L0,100 Z" fill="var(--creamy-yellow)"/></svg>
