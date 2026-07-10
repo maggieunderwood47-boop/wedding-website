@@ -76,13 +76,13 @@
 
   .eyebrow{
     font-family:var(--title);
-    font-size:clamp(20px,5vw,25px);
-    letter-spacing:0.02em;
+    font-size:clamp(34px,9vw,50px);
+    letter-spacing:0.01em;
     text-transform:uppercase;
     font-weight:400;
-    opacity:0.85;
+    opacity:0.9;
   }
-  .wrap{max-width:1180px;margin:0 auto;padding:0 26px;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
   section{position:relative;}
 
   .reveal{opacity:0;transform:translateY(20px);transition:opacity 0.8s cubic-bezier(.16,.8,.28,1), transform 0.8s cubic-bezier(.16,.8,.28,1);}
@@ -357,12 +357,12 @@
   .story .eyebrow{color:var(--orange);opacity:0.9;}
   .story h2{
     font-family:var(--sans);
-    font-weight:700;
-    letter-spacing:0.01em;
+    font-weight:500;
+    letter-spacing:0.03em;
     text-transform:uppercase;
-    font-size:clamp(22px,5.5vw,34px);
-    line-height:1.3;
-    margin-top:16px;
+    font-size:17px;
+    line-height:1.5;
+    margin-top:12px;
     color:var(--stone);
   }
   .story p{
@@ -389,8 +389,8 @@
     display:flex;align-items:center;justify-content:center;
     order:-1;
     overflow:hidden;
-    margin:-90px -26px 0;
-    width:calc(100% + 52px);
+    margin:-90px -32px 0;
+    width:calc(100% + 64px);
     z-index:3;
   }
   .story-photo img{
@@ -434,6 +434,7 @@
       drop-shadow(2px 2.5px 0.5px rgba(255,255,255,1))
       drop-shadow(-2px -2.5px 0.5px rgba(46,59,47,0.55));
   }
+  .schedule-intro .eyebrow{font-size:clamp(20px,5vw,25px);}
   .schedule-intro h2{
     font-family:var(--title);
     text-transform:uppercase;
@@ -530,8 +531,8 @@
     position:relative;
     order:-1;
     overflow:hidden;
-    margin:0 -26px;
-    width:calc(100% + 52px);
+    margin:0 -32px;
+    width:calc(100% + 64px);
   }
   .venue-photo img{
     width:100%;height:100%;object-fit:cover;display:block;
@@ -550,16 +551,16 @@
     text-align:center;
   }
   .venue h2{
-    font-family:var(--title);
+    font-family:var(--sans);
     text-transform:uppercase;
-    font-weight:400;
-    font-size:clamp(28px,7vw,50px);
-    margin:24px 0 4px;
+    font-weight:500;
+    letter-spacing:0.03em;
+    font-size:17px;
+    margin:12px 0 4px;
   }
   .venue-fullname{
     font-family:var(--sans);
-    font-style:italic;
-    font-weight:600;
+    font-weight:500;
     letter-spacing:0.06em;
     text-transform:uppercase;
     font-size:15px;
@@ -592,9 +593,9 @@
   .travel-head{text-align:center;margin-bottom:36px;}
   .travel-head .eyebrow{color:var(--orange);}
   .travel-head h2{
-    font-family:var(--title);font-weight:500;text-transform:uppercase;
-    font-size:clamp(28px,7.5vw,54px);
-    margin-top:22px;
+    font-family:var(--sans);font-weight:500;letter-spacing:0.03em;text-transform:uppercase;
+    font-size:17px;
+    margin-top:12px;
   }
   .travel-plane{width:130px;height:auto;margin:18px auto 0;display:block;}
   .inline-icon{width:20px;height:auto;vertical-align:-5px;margin-right:2px;display:inline-block;}
@@ -612,11 +613,11 @@
     padding:28px 24px;
   }
   .travel-card .num{
-    font-family:var(--sans);font-style:normal;font-weight:600;
+    font-family:var(--sans);font-style:normal;font-weight:500;
     font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);margin-bottom:14px;display:block;
   }
   .travel-card h3{
-    font-family:var(--sans);font-weight:600;font-size:15px;letter-spacing:0.06em;margin-bottom:10px;text-transform:uppercase;
+    font-family:var(--sans);font-weight:500;font-size:15px;letter-spacing:0.06em;margin-bottom:10px;text-transform:uppercase;
   }
   .travel-card p{
     font-size:14px;line-height:1.7;font-weight:300;color:rgba(251,246,232,0.72);
@@ -632,9 +633,9 @@
     text-align:center;
   }
   .registry h2{
-    font-family:var(--title);font-weight:500;text-transform:uppercase;
-    font-size:clamp(26px,7vw,48px);
-    margin:24px 0 14px;
+    font-family:var(--sans);font-weight:500;letter-spacing:0.03em;text-transform:uppercase;
+    font-size:17px;
+    margin:12px 0 14px;
   }
   .registry p{
     max-width:320px;margin:0 auto;
@@ -656,8 +657,8 @@
   }
   .faq-head{text-align:center;margin-bottom:36px;}
   .faq-head h2{
-    font-family:var(--title);font-weight:500;font-style:normal;text-transform:uppercase;
-    font-size:clamp(28px,8vw,48px);margin-top:22px;
+    font-family:var(--sans);font-weight:500;letter-spacing:0.03em;text-transform:uppercase;
+    font-size:17px;margin-top:12px;
   }
   .faq-list{max-width:680px;margin:0 auto;}
   .faq-item{
@@ -673,7 +674,7 @@
     align-items:center;
     gap:16px;
     font-family:var(--sans);
-    font-weight:600;
+    font-weight:500;
     font-size:15px;
     letter-spacing:0.01em;
     color:var(--ink);
@@ -719,10 +720,10 @@
   .rsvp .reveal{position:relative;z-index:1;}
   .rsvp .eyebrow{color:rgba(255,232,139,0.85);}
   .rsvp h2{
-    font-family:var(--title);font-weight:500;text-transform:uppercase;
-    font-size:clamp(36px,11vw,88px);
-    line-height:1.05;
-    margin:26px 0 16px;
+    font-family:var(--sans);font-weight:500;letter-spacing:0.03em;text-transform:uppercase;
+    font-size:17px;
+    line-height:1.4;
+    margin:12px 0 16px;
   }
   .rsvp p{
     font-size:15px;font-weight:300;
@@ -792,10 +793,11 @@
 
   @media (min-width:861px){
     :root{--nav-h:76px;}
-    .wrap{padding:0 72px;}
-    .eyebrow{font-size:26px;}
+    .wrap{padding:0 96px;}
+    .eyebrow{font-size:56px;}
+    .schedule-intro .eyebrow{font-size:26px;}
 
-    nav{padding:0 72px;}
+    nav{padding:0 96px;}
     nav .logo{font-size:19px;}
     .menu-btn{display:none;}
     .nav-scrim{display:none;}
