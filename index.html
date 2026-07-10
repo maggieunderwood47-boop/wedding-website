@@ -82,7 +82,7 @@
     font-weight:400;
     opacity:0.9;
   }
-  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 36px;}
   section{position:relative;}
 
   .reveal{opacity:0;transform:translateY(20px);transition:opacity 0.8s cubic-bezier(.16,.8,.28,1), transform 0.8s cubic-bezier(.16,.8,.28,1);}
@@ -315,7 +315,7 @@
   /* ---------- Countdown ---------- */
   .countdown-teaser{
     padding:76px 0 84px;
-    background:var(--creamy-yellow);
+    background:var(--orange);
     text-align:center;
     position:relative;
     overflow:hidden;
@@ -330,7 +330,8 @@
   .countdown-line{
     font-family:var(--sans);
     font-weight:500;
-    letter-spacing:0.01em;
+    letter-spacing:0.02em;
+    text-transform:uppercase;
     font-size:clamp(16px,4.5vw,24px);
     line-height:1.4;
     color:var(--ink);
@@ -338,7 +339,7 @@
   .countdown-num{
     font-weight:500;
     font-style:normal;
-    color:var(--olive);
+    color:var(--olive-mid);
     font-size:1.3em;
   }
   .countdown-line em{font-style:normal;color:var(--olive-dark);}
@@ -384,7 +385,7 @@
   .story-photo{
     aspect-ratio:4/3;
     border-radius:0;
-    background:linear-gradient(155deg, var(--orange) 0%, var(--olive) 50%, var(--olive-mid) 75%, var(--olive-dark) 100%);
+    background:linear-gradient(155deg, var(--orange) 0%, var(--olive-mid) 55%, var(--olive-dark) 100%);
     position:relative;
     display:flex;align-items:center;justify-content:center;
     order:-1;
@@ -411,7 +412,7 @@
 
   /* ---------- Schedule ---------- */
   .schedule-intro{
-    padding:72px 0 64px;
+    padding:76px 0 76px;
     text-align:center;
     background:var(--stone);
     background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxODAnIGhlaWdodD0nMTgwJz4KPGZpbHRlciBpZD0nbic+CjxmZVR1cmJ1bGVuY2UgdHlwZT0nZnJhY3RhbE5vaXNlJyBiYXNlRnJlcXVlbmN5PScwLjg1JyBudW1PY3RhdmVzPScyJyBzdGl0Y2hUaWxlcz0nc3RpdGNoJyByZXN1bHQ9J3QnLz4KPGZlQ29sb3JNYXRyaXggaW49J3QnIHR5cGU9J21hdHJpeCcgdmFsdWVzPScwIDAgMCAwIDAuMTggIDAgMCAwIDAgMC4yMCAgMCAwIDAgMCAwLjE1ICAwIDAgMCAwLjA1IDAnLz4KPC9maWx0ZXI+CjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNuKScvPgo8L3N2Zz4=);
@@ -434,7 +435,7 @@
       drop-shadow(2px 2.5px 0.5px rgba(255,255,255,1))
       drop-shadow(-2px -2.5px 0.5px rgba(46,59,47,0.55));
   }
-  .schedule-intro .eyebrow{font-size:clamp(20px,5vw,25px);}
+  .schedule-intro .eyebrow{font-family:var(--sans);font-size:15px;letter-spacing:0.12em;font-weight:500;}
   .schedule-intro h2{
     font-family:var(--title);
     text-transform:uppercase;
@@ -508,15 +509,15 @@
     opacity:0.85;
   }
   .day-dress em{font-style:normal;opacity:0.75;}
-  .day-1{background:var(--olive);color:var(--stone);}
-  .day-2{background:var(--creamy-yellow);color:var(--olive-dark);}
+  .day-1{background:var(--olive-mid);color:var(--stone);}
+  .day-2{background:var(--stone);color:var(--olive-dark);}
   .day-3{background:var(--orange);color:var(--olive-dark);}
   .day-4{background:var(--olive-mid);color:var(--stone);}
 
   /* ---------- Venue ---------- */
   .venue{
     padding:100px 0;
-    background:var(--creamy-yellow);
+    background:var(--stone);
   }
   .venue .wrap{
     display:flex;
@@ -564,7 +565,7 @@
     letter-spacing:0.06em;
     text-transform:uppercase;
     font-size:15px;
-    color:var(--olive);
+    color:var(--olive-mid);
     margin-bottom:16px !important;
   }
   .venue p{
@@ -653,7 +654,7 @@
   /* ---------- FAQ ---------- */
   .faq{
     padding:96px 0;
-    background:var(--creamy-yellow);
+    background:var(--orange);
   }
   .faq-head{text-align:center;margin-bottom:36px;}
   .faq-head h2{
@@ -685,7 +686,7 @@
     font-family:var(--sans);
     font-size:20px;
     font-weight:300;
-    color:var(--olive);
+    color:var(--olive-mid);
     flex-shrink:0;
     transition:transform 0.5s cubic-bezier(.34,1.8,.64,1);
   }
@@ -793,11 +794,10 @@
 
   @media (min-width:861px){
     :root{--nav-h:76px;}
-    .wrap{padding:0 96px;}
+    .wrap{padding:0 120px;}
     .eyebrow{font-size:56px;}
-    .schedule-intro .eyebrow{font-size:26px;}
 
-    nav{padding:0 96px;}
+    nav{padding:0 120px;}
     nav .logo{font-size:19px;}
     .menu-btn{display:none;}
     .nav-scrim{display:none;}
@@ -808,7 +808,7 @@
     }
     .nav-links ul{flex-direction:row;gap:36px;margin-bottom:0;}
     .nav-links li a{padding:0;border-bottom:none;font-size:13px;}
-    .nav-links li a:hover{color:var(--olive);}
+    .nav-links li a:hover{color:var(--olive-mid);}
     nav .rsvp-pill{width:auto;padding:9px 20px;}
     nav .rsvp-pill:hover{background:var(--creamy-yellow);}
 
@@ -948,7 +948,7 @@
 </section>
 
 <section class="day day-1" id="schedule">
-  <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,55 C360,10 1080,95 1440,45 L1440,100 L0,100 Z" fill="var(--olive)"/></svg>
+  <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,55 C360,10 1080,95 1440,45 L1440,100 L0,100 Z" fill="var(--olive-mid)"/></svg>
   <div class="wrap">
     <div class="reveal"><span class="day-num" data-parallax="0.1">01</span></div>
     <div class="reveal">
@@ -961,7 +961,7 @@
 </section>
 
 <section class="day day-2">
-  <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,45 C400,90 1040,5 1440,55 L1440,100 L0,100 Z" fill="var(--creamy-yellow)"/></svg>
+  <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,45 C400,90 1040,5 1440,55 L1440,100 L0,100 Z" fill="var(--stone)"/></svg>
   <div class="wrap">
     <div class="reveal"><span class="day-num" data-parallax="0.1">02</span></div>
     <div class="reveal">
@@ -1000,7 +1000,7 @@
 </section>
 
 <section class="venue" id="venue">
-  <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C400,95 1080,10 1440,50 L1440,100 L0,100 Z" fill="var(--creamy-yellow)"/></svg>
+  <svg class="seam" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C400,95 1080,10 1440,50 L1440,100 L0,100 Z" fill="var(--stone)"/></svg>
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow">Where We'll Be</span>
