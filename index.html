@@ -58,13 +58,12 @@
     --stack-peek:20px;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth;overflow-x:hidden;}
   body{
     font-family:var(--sans);
     background:var(--stone);
     color:var(--ink);
     -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
   }
   a{color:inherit;text-decoration:none;}
   img{max-width:100%;display:block;}
@@ -489,7 +488,7 @@
   .day-4{top:calc(var(--nav-h) + var(--stack-peek) * 4);z-index:5;}
   .schedule-intro.is-covered,.day-1.is-covered,.day-2.is-covered,.day-3.is-covered{cursor:pointer;}
   .schedule-intro.is-covered:hover,.day-1.is-covered:hover,.day-2.is-covered:hover,.day-3.is-covered:hover{filter:brightness(1.06);}
-  .schedule-stack{position:relative;isolation:isolate;}
+  .schedule-stack{position:relative;z-index:0;}
 
   /* ---------- Venue ---------- */
   .venue{
